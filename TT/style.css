@@ -1,0 +1,320 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+html{
+    font-family: 'Nosifer', cursive;
+    background-color: black;
+    color: rgb(177,0,0);
+    letter-spacing: 2px
+}
+
+footer{
+    color: #1A6AE7
+}
+
+footer i{
+    color: #1A6AE7
+}
+
+.infoblock p{
+    font-family: 'Eater', cursive;
+}
+
+.logo {
+    width: 229px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px
+}
+
+.logo img{
+    width: 200px;
+    height: 200px
+}
+
+nav{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+nav ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none
+}
+
+a{
+    text-decoration: none;
+    color: #1A6AE7;
+    font-size: 1.5vw
+}
+
+nav li:hover {
+    color: green;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+  @-webkit-keyframes glow {
+    from {
+    text-shadow: 0 0 10px #90EE90, 0 0 20px #90EE90, 0 0 30px #90EE90, 0 0 40px #90EE90, 0 0 50px #90EE90, 0 0 60px #90EE90, 0 0 70px #90EE90;
+}
+    
+    to {
+    text-shadow: 0 0 40px #90EE90, 0 0 50px #90EE90, 0 0 60px #90EE90, 0 0 70px #90EE90, 0 0 80px #90EE90, 0 0 90px #90EE90, 0 0 1000px #90EE90;
+}
+} 
+
+/* count styles */
+.count{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 1200px;
+    font-size: 25px
+    
+}
+
+/* Flyer Styles */
+
+    .flyer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    display: block;
+    max-width: 1200px
+}
+
+.flyer img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width:1200px;
+    height: 400px  
+}
+
+.flyer2{
+  display: none
+}
+
+/* Tix Styles */
+.tix{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px
+}
+
+.tix p{
+  width: 70%;
+  margin-top: 30px;
+  text-align: center;
+  color: red;
+  border: solid green;
+  margin: 0 auto
+}
+
+/* infoblock styles */
+.infoblock{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px
+}
+
+.infoblock .trail{
+    width:calc(100% / 2);
+    margin-right: 50px
+}
+
+/* .infoblock .market{
+    width:calc(100% / 3);
+    margin-right: 50px;
+} */
+
+.infoblock .kidzone{
+    width:calc(100% / 2);
+}
+
+.infoblock h3{
+    font-size: 25px
+}
+
+.infoblock p{
+    font-size: 1.5vw
+}
+
+/* footer styles */
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px
+}
+
+footer a{
+    color: #1A6AE7
+}
+
+footer i{
+  font-size: 20px
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  label{
+    margin-left: 0%;
+    font-size: 26px;
+    display: none
+  }
+  
+  #toggle{
+    display: none
+  }
+  
+.infoblock p{
+  font-size: 18px
+}
+
+
+  @media(max-width:800px) {
+    label{
+      display: block;
+      cursor: pointer;
+    }
+    
+    .infoblock p{
+      font-size: 15px
+    }
+    
+    nav ul{
+      display: none;
+      margin: 0;
+      text-align: center
+    }
+  
+    nav a{
+      font-size: 1rem
+    }
+    
+    input:checked + nav {
+        right: 0
+    }
+    
+    #toggle:checked + .nav {
+      display: block;
+    }
+    
+    .logo{
+      margin-left: 0
+    }
+  
+    .logo img{
+      width: 50%;
+      height: 50%;
+      margin-left: 28%;
+      margin-top: 10px
+    }
+  
+    .flyer{
+      display: none
+    }
+
+    .flyer2{
+      display: block;
+      margin: 0 auto;
+      width: 90%
+    }
+
+    label{
+      width: 10%;
+      top: 24px;
+      right: 5%;
+      display: inline-block;
+      position: absolute;
+      font-size: 3rem
+    }
+
+    .tix p{
+      font-size: 20px
+    }
+
+    .infoblock{
+      display: block
+    }
+
+    .infoblock .trail{
+      order: 1;
+      display: block;
+      width: 100%
+    }
+
+    .infoblock .market{
+      order: 2;
+      display: block;
+      width: 100%
+    }
+
+    .infoblock .kidzone{
+      order: 3;
+      display: block;
+      width: 100%;
+      margin-bottom: 20px
+    }
+
+    .count{
+      width: 100%
+    }
+  }
+
+  @media(max-width:375px) {
+
+    .count{
+      width: 100%;
+      font-size: 15px
+    }
+
+    label{
+      width: 10%;
+      top: 24px;
+      right: 20px;
+      display: inline-block;
+      position: absolute;
+      font-size: 3rem
+    }
+
+    .flyer img{
+      height: auto
+    }
+
+    nav label{
+      right:3%;
+      top:38px;
+      width: 25%
+    }
+
+    .logo img{
+      margin-left: 7%
+    }
+  }
+
+  .cancel{
+    width:75%;
+    margin: 0 auto
+  }

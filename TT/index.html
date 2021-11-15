@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terror Trail</title>
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eater&display=swap" rel="stylesheet">  
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/4ce726e3dd.js"></script>
+
+    <link rel="shortcut  icon" href="assets/favicon.ico">
+    <ling rel="apple-touch-icon" href="assets/favicon-32x32.png">
+
+</head>
+<body>
+
+    <div class="logo">
+        <a href="index.html"><img src="assets/home-logo.png"></a>
+    </div>
+    
+    <nav>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Sponsors</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- <div class="count"> -->
+        <!-- <h3>Thanks to everyone for making Terror Trail 2019 a huge success!</h3> -->
+    <!-- <h3>The Terror Returns:</h3>
+    <h3 id="demo"></h3>
+    </div> -->
+
+
+
+    <!-- <div class="flyer">
+        <img src="assets/home-logo.png" class="flyer">
+    </div>
+
+    <div class="flyer2">
+        <img src="assets/home-logo.png" class="flyer2">
+    </div> -->
+
+    <!-- <div class="tix">
+    <a href=#><p>Click Here For Advanced Tickets!</p></a>
+    </div> -->
+
+    <div class="cancel">
+        <p>It is with a heavy heart that we announce the cancellation on Terror Trail in 2020. We look forward to scaring our brave visitors in 2021.</p>
+    </div>
+
+    <div class="infoblock clearfix">
+
+        <!-- <div class="kidzone">
+            <h3>Temble Trail</h3>
+            <p>Temble Trail is a special less intense version of our famous trail. This version is recommended for our younger visitors. </p>
+        </div>
+        
+        
+        <div class="trail">
+            <h3>Terror Trail</h3>
+            <p>Come hear the terrifying tale of Ravyn Graves. Born by an unholy union between a Demon & a Witch; created for the sole purpose to unleash pure evil into the world.</p>
+        </div> -->
+
+        <!-- <div class="market">
+            <h3>Market</h3>
+            <p>Support local businesses in the area and pick-up a few treats. From Jewellery to sweets, our Market will have something for everyone of all ages.</p>
+        </div> -->
+
+    </div>
+
+    <footer>
+        <p>Follow Terror Trail Online:</p>
+        <a href="https://www.facebook.com/TerrorTrailOntario/"a target="_blank"><i class="fab fa-facebook-square"></a></i>
+        <a href="https://www.instagram.com/terror.trail2019/"a target="_blank"><i class="fab fa-instagram"></a></i>
+        <a href="https://www.youtube.com/watch?reload=9&v=p3VLasP-8ak&fbclid=IwAR04ZwfQuUUxnrdSW0JkRXAXY1d7kTFPkePd9k6xUScOsfhDxxglkpGaNms"a target="_blank"><i class="fab fa-youtube"></a></i>
+    </footer>
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 30, 2020 16:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "THE TERROR IS ON!!!";
+  }
+}, 1000);
+</script>
+</body>
+</html>

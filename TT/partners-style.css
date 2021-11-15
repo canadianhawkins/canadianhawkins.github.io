@@ -1,0 +1,449 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* HTML & Nav Styles */
+
+html{
+    /* margin  0 auto; */
+    font-family: 'Nosifer', cursive;
+    /* font-family: 'Creepster', cursive; */
+    background-color: black;
+    color: rgb(177,0,0);
+    letter-spacing: 2px
+}
+
+.toplogo {
+    width: 229px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px
+}
+
+.toplogo img{
+    width: 200px;
+    height: 200px
+}
+
+nav{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+nav ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none
+}
+
+a{
+    text-decoration: none;
+    color: #1A6AE7;
+    font-size: 1.5vw
+}
+
+p{
+    /* font-family: 'Eater', cursive; */
+    font-family: 'Eater', cursive;
+}
+
+nav li:hover {
+    /* font-size: 80px; */
+    color: green;
+    /* text-align: center; */
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+  @-webkit-keyframes glow {
+    from {
+    text-shadow: 0 0 10px #90EE90, 0 0 20px #90EE90, 0 0 30px #90EE90, 0 0 40px #90EE90, 0 0 50px #90EE90, 0 0 60px #90EE90, 0 0 70px #90EE90;
+}
+    
+    to {
+     text-shadow: 0 0 40px #90EE90, 0 0 50px #90EE90, 0 0 60px #90EE90, 0 0 70px #90EE90, 0 0 80px #90EE90, 0 0 90px #90EE90, 0 0 1000px #90EE90;
+}
+}
+
+/* Intro Class */
+
+.intro{
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 15px
+}
+
+/* Partner Styles */
+
+.partner{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 15px
+    /* font-size: 1.5vw */
+}
+
+.verta, .lion, .love, .bacon, .animum, .josh{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex
+}
+
+img{
+    width: 300px;
+    height: 300px
+}
+
+.vertainfo{
+    margin: 0 auto;
+    margin-left: 20px;
+    /* font-size: 1vw; */
+    padding-top: 55px
+}
+
+.lioninfo{
+    margin-right: 20px;
+    padding-top: 65px
+}
+
+.loveinfo{
+    margin-left: 20px;
+    padding-top: 65px
+}
+
+/* .baconinfo,{
+    margin-right: 20px;
+    padding-top: 65px
+} */
+
+.animuminfo{
+    margin-right: 20px;
+    padding-top: 45px
+}
+
+.joshinfo{
+  margin-left: 20px;
+  padding-top: 65px
+}
+
+/* Footer Styles */
+
+footer{
+    text-align: center;
+    font-family: 'Nosifer', cursive;
+    color:#1A6AE7
+}
+
+footer p{
+    font-family: 'Nosifer', cursive;
+}
+
+footer i{
+  font-size: 20px
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  label{
+    margin-left: 0%;
+    font-size: 26px;
+    display: none
+  }
+  
+  #toggle{
+    display: none
+  }
+
+  @media(max-width:1210px) {
+    .animuminfo{
+      padding-top: 20px
+      /* display: block; */
+      /* cursor: pointer; */
+    }
+  }
+
+  
+  @media(max-width:1110px) {
+    .vertainfo{
+      padding-top: 30px
+      /* display: block; */
+      /* cursor: pointer; */
+    }
+
+    .loveinfo{
+      padding-top: 40px
+    }
+  }
+  
+  @media(max-width:1055px) {
+    .animuminfo{
+      padding-top: 10px
+      /* display: block; */
+      /* cursor: pointer; */
+    }
+  }
+
+  @media(max-width:1000px) {
+    .animuminfo{
+      padding-top: 0px;
+      font-size: 14px
+      /* display: block; */
+      /* cursor: pointer; */
+    }
+  }
+
+
+
+  @media(max-width:910px) {
+    .vertainfo{
+      padding-top: 0px
+      /* display: block; */
+      /* cursor: pointer; */
+    }
+
+    .lioninfo{
+      padding-top: 30px
+    }
+
+    .loveinfo{
+      padding-top: 30px
+    }
+  }
+
+  @media(max-width:800px) {
+    label{
+      display: block;
+      cursor: pointer;
+    }
+    
+    nav li{
+      /* display: none */
+    }
+    
+    nav ul{
+      display: none;
+      margin: 0;
+      text-align: center
+    }
+  
+    nav a{
+      font-size: 1rem
+    }
+    
+    input:checked + nav {
+        right: 0
+    }
+    
+    #toggle:checked + .nav {
+      display: block;
+    }
+    
+    .toplogo{
+      margin-left: 0
+    }
+  
+    .toplogo img{
+      width: 50%;
+      height: 50%;
+      margin-left: 28%;
+      margin-top: 4.5%
+    }
+  
+    label{
+      width: 0%;
+      top: 4%;
+      right: 13.4%;
+      display: inline-block;
+      /* float: left; */
+      /* float: right; */
+      /* margin-top:-12%; */
+      position: absolute;
+      font-size: 3rem
+    }
+
+    img{
+      width: 200px;
+      height: 200px
+  }
+
+  .vertainfo{
+    padding-top: 10px
+  }
+
+  .lioninfo{
+    padding-top: 15px
+  }
+
+  .loveinfo{
+    padding-top: 15px
+  }
+
+  .baconinfo{
+    padding-top: 15px
+  }
+
+  .animuminfo{
+    padding-top: 15px;
+    padding-bottom: 15px
+  }
+
+  .partner{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    flex-direction: column
+    /* font-size: 1.5vw */
+}
+
+.lion, .verta, .love, .bacon, .animum, .josh{
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-content: center
+  /* display: block */
+}
+
+.lionlogo{
+  width: 100%;
+  height: auto;
+  order: 1
+}
+
+.lioninfo{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  order: 2
+}
+
+.baconlogo{
+  width: 100%;
+  height: auto;
+  order: 1
+}
+
+.baconinfo{
+  width: 100%;
+  height: auto;
+  order: 2;
+  margin: 0
+}
+
+.josh{
+  margin-top: -15px
+}
+
+.joshinfo{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  order: 2;
+  padding-top: 15px;
+
+}
+
+.joshlogo{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0
+  /* order: 1 */
+}
+
+.partner a{
+  font-size: 15px
+}
+
+.vertainfo{
+  /* margin: 0 auto; */
+  /* margin-left: 20px; */
+  /* padding-top: 55px; */
+  margin: 0
+}
+
+.lioninfo{
+  /* margin-right: 20px; */
+  /* padding-top: 65px; */
+  margin: 0;
+}
+
+.loveinfo{
+  /* margin-left: 20px; */
+  /* padding-top: 65px; */
+  margin: 0
+}
+
+.baconinfo{
+  /* margin-right: 20px; */
+  /* padding-top: 65px; */
+  margin: 0
+}
+
+.animuminfo{
+  /* margin-left: 20px; */
+  /* padding-top: 65px; */
+  margin: 0
+}
+
+.joshinfo{
+  margin: 0
+}
+
+footer{
+  margin-top: -20px
+}
+
+  }
+
+  
+  @media(max-width:375px) {
+    nav label{
+      right:3%;
+      top:38px;
+      width: 25%
+    }
+
+    .toplogo img{
+      margin-left:7%;
+      margin-top:4.5%
+    }
+
+    label{
+      width: 10%;
+      top: 24px;
+      right: 20px;
+      display: inline-block;
+      position: absolute;
+      font-size: 3rem
+    }
+
+    .partner{
+      text-align: center;
+      margin: 0
+      /* margin-right: 2px */
+    }
+
+    .parnter p{
+      text-align: center;
+      margin: 0;
+      margin-right: 5px
+    }
+
+  }
